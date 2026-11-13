@@ -1,0 +1,83 @@
+{
+    "name": "Main Dispatcher",
+    "allocation_counter": 1,
+    "trucks": [
+        {
+            "account_number": "TRK-001",
+            "owner": "jackson",
+            "balance": 10030000.0,
+            "opening_balance": 10000000.0,
+            "transactions": [
+                "Deposit: +50,000.00 | Balance: 10,050,000.00",
+                "Withdrawal: -20,000.00 | Balance: 10,030,000.00"
+            ],
+            "plate": "KEA 111A",
+            "status": "Allocated",
+            "route_name": "Mandera",
+            "allocation_count": 1,
+            "last_service": "2026-11-11",
+            "maintenance_log": [
+                {
+                    "date": "2026-11-11",
+                    "result": "PASSED",
+                    "notes": "good condition"
+                }
+            ],
+            "daily_activity": {
+                "2026-11-11": [
+                    {
+                        "time": "02:15:01",
+                        "type": "Maintenance",
+                        "amount": 0.0,
+                        "balance": 10000000.0,
+                        "note": "PASSED. good condition"
+                    }
+                ],
+                "2026-11-13": [
+                    {
+                        "time": "02:17:46",
+                        "type": "Allocation",
+                        "amount": 0.0,
+                        "balance": 10000000.0,
+                        "note": "Allocated to Mandera (allocation #1)"
+                    },
+                    {
+                        "time": "02:19:39",
+                        "type": "Deposit",
+                        "amount": 50000.0,
+                        "balance": 10050000.0,
+                        "note": ""
+                    },
+                    {
+                        "time": "02:20:01",
+                        "type": "Withdrawal",
+                        "amount": 20000.0,
+                        "balance": 10030000.0,
+                        "note": ""
+                    }
+                ]
+            }
+        }
+    ],
+    "routes": [
+        {
+            "name": "Mandera",
+            "stops": [
+                "El Wak"
+            ],
+            "days": [
+                "Monday",
+                "Wednesday And Friday"
+            ],
+            "truck_id": "TRK-001"
+        }
+    ],
+    "allocations": [
+        {
+            "allocation_no": "ALLOC-001",
+            "truck_id": "TRK-001",
+            "route": "Mandera",
+            "date": "2026-11-13"
+        }
+    ]
+}
